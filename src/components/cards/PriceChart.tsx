@@ -2,7 +2,7 @@
 
 import PriceChangeIndicator from "@/components/ui/PriceChangeIndicator";
 import TradingViewWidget from "@/components/cards/TradingViewWidget.jsx";
-import Card from "@/components/ui/Card";
+import WhiteCard from "@/components/ui/WhiteCard";
 import Title from "@/components/ui/Title";
 
 export default async function PriceChart({ coin }: { coin: string }) {
@@ -12,12 +12,12 @@ export default async function PriceChart({ coin }: { coin: string }) {
     // const data = { "bitcoin": { "inr" : 5478160, "inr_24h_change" : -1.7221522124515098, "usd" : 66154, "usd_24h_change" : -1.646032274609119 } };
 
     return (
-        <Card>
+        <WhiteCard>
           <div className="flex justify-between">
-            <Title><p>${data[`${coin}`].usd.toLocaleString('en-US')}</p></Title>
+            <Title>${data[`${coin}`].usd.toLocaleString('en-US')}</Title>
             <div className="flex">
               <div><PriceChangeIndicator priceChange={data[`${coin}`].usd_24h_change} /></div>
-              <div className="mt-1 ml-4 mr-6 text-gray-500 text-sm">(24H)</div>
+              <div className="mt-1 ml-4 mr-6 text-gray-500 text-sm font-medium">(24H)</div>
             </div>
           </div>
           <div className="font-medium"><p>₹{data[`${coin}`].inr.toLocaleString('en-IN')}</p></div>
@@ -37,6 +37,6 @@ export default async function PriceChart({ coin }: { coin: string }) {
             {/* PRICE CHART */}
             <div className="my-4 aspect-video overflow-hidden"><TradingViewWidget /></div>
           </div>
-        </Card>
+        </WhiteCard>
     );
 }

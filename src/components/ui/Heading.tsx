@@ -1,7 +1,7 @@
 export default function Title({children} : {children: React.ReactNode}) {
         
     return (
-        <div className="mb-4 text-xl font-semibold">
+        <div className="my-4 text-xl font-bold">
             <p>{children}</p>
         </div>
     );

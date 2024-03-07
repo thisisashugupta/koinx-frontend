@@ -23,7 +23,7 @@ function TradingViewWidget() {
           "locale": "en",
           "enable_publishing": false,
           "backgroundColor": "rgba(255, 255, 255, 1)",
-          "hide_top_toolbar": false,
+          "hide_top_toolbar": true,
           "hide_legend": true,
           "save_image": false,
           "calendar": false,

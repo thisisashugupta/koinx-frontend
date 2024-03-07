@@ -1,7 +1,7 @@
 import WhiteCard from "@/components/ui/WhiteCard";
 import Title from "@/components/ui/Title";
 import Member from "@/components/ui/Member";
-import MayLike from "../MayLike";
+import MayLike from "@/components/MayLike";
 
 export default function TeamCard() {
     return (
@@ -11,6 +11,7 @@ export default function TeamCard() {
             <Member name="John Smith" img="/john-2.png" />
             <Member name="Elina Williams" img="/elina.png" />
             <Member name="Josh Smith" img="/john.png" />
+            <div className="block md:hidden"><MayLike /></div>
             <div className="block md:hidden"><MayLike /></div>
         </WhiteCard>
     );

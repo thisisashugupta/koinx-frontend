@@ -15,7 +15,7 @@ export default function PerformanceCard() {
                 </div>
                 <div className="flex flex-col items-end"><p className="w-max mb-2 text-sm text-gray-700">Today&apos;s High</p><p>49,343.83</p></div>
             </div>
-            <div className="w-full h-7"></div>
+            <div className="w-full h-9"></div>
             <div className="flex">
                 <div><p className="w-max mb-2 text-sm text-gray-700">52W Low</p><p>16,930.22</p></div>
                 <div className="my-auto w-full p-6">

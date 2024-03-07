@@ -7,8 +7,8 @@ export default function PerformanceCard() {
         <WhiteCard>
             <Title>Performance</Title>
 
-            {/*  */}
-            <div className="flex">
+            {/* COMPARISION BARS */}
+            <div className="mt-6 flex">
                 <div><p className="w-max mb-2 text-sm text-gray-700">Today&apos;s Low</p><p>46,930.22</p></div>
                 <div className="my-auto w-full p-4">
                     <div className="h-[0.4rem] w-full rounded-xl bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
@@ -24,7 +24,7 @@ export default function PerformanceCard() {
                 <div className="flex flex-col items-end"><p className="w-max mb-2 text-sm text-gray-700">52W High</p><p>49,743.83</p></div>
             </div>
 
-            {/*  */}
+            {/* FUNDAMENTALS */}
             <div>
                 <div className="flex gap-2 mt-8 text-xl font-semibold">
                     <p>Fundamentals</p>

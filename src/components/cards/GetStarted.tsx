@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function GetStartedCard() {
     return (
-        <div id="get-started" className="mx-4 p-6 md:max-w-96 bg-gradient-to-r from-blue-700 via-indigo-600 to-blue-700 rounded-xl text-white flex flex-col items-center">
+        <div id="get-started" className="p-6 w-full bg-regal-blue rounded-xl text-white flex flex-col items-center">
             <div className="flex md:flex-col flex-col-reverse">
             <div className="flex flex-col items-center">
                 <div className="text-xl md:text-lg font-semibold text-center">

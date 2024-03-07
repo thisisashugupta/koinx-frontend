@@ -3,7 +3,8 @@
 import PriceChangeIndicator from "@/components/ui/PriceChangeIndicator";
 import TradingViewWidget from "@/components/cards/TradingViewWidget.jsx";
 import WhiteCard from "@/components/ui/WhiteCard";
-import Title from "@/components/ui/Title";
+import Image from "next/image";
+import CoinInfo from "../CoinInfo";
 // import Heading from "@/components/ui/Heading";
 
 export default async function PriceChart({ coin }: { coin: string }) {
@@ -15,9 +16,16 @@ export default async function PriceChart({ coin }: { coin: string }) {
     return (
         <WhiteCard>
         <div className="px-2 pt-2">
-          <div className="mb-2 flex justify-between">
+        
+          <div className="hidden md:block">
+            <div className="mb-6 w-full flex items-center gap-3 font-semibold">
+              <CoinInfo />
+            </div>
+          </div>
+
+          <div className="mb-2 flex justify-between md:justify-start">
             <div className="text-3xl font-semibold">${data[`${coin}`].usd.toLocaleString('en-US')}</div>
-            <div className="flex">
+            <div className="flex md:ml-10">
               <div><PriceChangeIndicator priceChange={data[`${coin}`].usd_24h_change} /></div>
               <div className="mt-1 ml-4 mr-6 text-gray-500 text-sm font-medium"><p>(24H)</p></div>
             </div>

@@ -28,15 +28,15 @@ export default function SentimentCard() {
                 <div className="w-full flex flex-col justify-between p-3">
                     <div id="row-1" className="flex justify-between gap-8">
                         <div className="absolute w-12 text-gray-500">Buy</div>
-                        <div className="ml-12 w-full flex justify-start items-center gap-3"><div className="h-2 w-full bg-green-700/70 rounded-sm"></div><span className="text-gray-500">76%</span></div>
+                        <div className="ml-12 w-full flex justify-start items-center gap-3"><div className="max-w-sm h-2 w-full bg-green-700/70 rounded-sm"></div><span className="text-gray-500">76%</span></div>
                     </div>
                     <div id="row-2"className="flex justify-between gap-6">
                         <div className="absolute w-12 text-gray-500">Hold</div>
-                        <div className="ml-12 w-full flex justify-start items-center gap-3"><div className="h-2 w-10 bg-gray-300 rounded-sm"></div><span className="text-gray-500">8%</span></div>
+                        <div className="ml-12 w-full flex justify-start items-center gap-3"><div className="max-w-sm h-2 w-10 bg-gray-300 rounded-sm"></div><span className="text-gray-500">8%</span></div>
                     </div>
                     <div id="row-3"className="flex justify-between gap-8">
                         <div className="absolute w-12 text-gray-500">Sell</div>
-                        <div className="ml-12 w-full flex justify-start items-center gap-3"><div className="h-2 w-12 bg-red-500 rounded-sm"></div><span className="text-gray-500">16%</span></div>
+                        <div className="ml-12 w-full flex justify-start items-center gap-3"><div className="max-w-sm h-2 w-12 bg-red-500 rounded-sm"></div><span className="text-gray-500">16%</span></div>
                     </div>
                 </div>
             </div>

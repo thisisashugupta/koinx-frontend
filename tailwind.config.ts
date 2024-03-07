@@ -40,6 +40,7 @@ const config = {
         '5xl': '3rem',
       },
       colors: {
+        'regal-blue': '#0051FE',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

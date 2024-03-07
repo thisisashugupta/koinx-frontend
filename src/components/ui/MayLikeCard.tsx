@@ -13,7 +13,7 @@ interface MayLikeCardProps {
 
 export default function MayLikeCard({name, price_change_percentage_24h, price, graph, image_url} : MayLikeCardProps ) {
   return (
-    <CarouselItem className="basis-2/5 md:basis-1/2 lg:basis-1/3">
+    <CarouselItem className="basis-2/5 md:basis-1/4 lg:basis-1/5">
         <Card>
           <CardContent className="p-3 flex flex-col items-start justify-start">
             <div className="flex flex-wrap items-center gap-2">

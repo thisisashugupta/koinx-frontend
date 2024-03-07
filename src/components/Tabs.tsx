@@ -13,6 +13,7 @@ function Tabs() {
         <div>Sentiments</div>
         <div>Team</div>
         <div>Technicals</div>
+        <div>Tokenomics</div>
       </div>
       <div className='px-4'><hr /></div>
     </div>

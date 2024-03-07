@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel"
 // import {api_response} from "@/lib/sample_response"
 
-async function MayLike() {
+async function MayLike({title}: {title: string}) {
 
   let data;
 
@@ -28,8 +28,8 @@ async function MayLike() {
   }
   
   return (
-    <div>
-      <Heading>You May Also Like</Heading>
+    <div className="max-w-7xl w-full">
+      <Heading>{title}</Heading>
         <Carousel
           opts={{
             align: "start",

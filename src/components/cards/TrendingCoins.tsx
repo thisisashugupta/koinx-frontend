@@ -30,7 +30,7 @@ export default async function TrendingCoinsCard() {
   const coins = data.coins.slice(0, 3);
     
     return (
-        <div id="trending-coins-card" className="md:mx-4 px-4 py-6 md:rounded-xl bg-white space-y-6">
+        <div id="trending-coins-card" className="px-4 py-6 w-full md:rounded-xl bg-white space-y-6">
           <div className="text-2xl font-semibold"><p>Trending Coins (24h)</p></div>
           <div id="trending-coins-list" className="space-y-4">
             {coins.slice(0, 3).map((coin : TrendingCoin) => (
